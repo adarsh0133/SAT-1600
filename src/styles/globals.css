@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  scroll-behavior: smooth;
+  color: #464646;
+  /* font-family: poppins, sans-serif; */
+}
+p{
+  cursor: default;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.mblack{
+  color: #1C2120;
+}
+.oblack{
+  color: #1C2120;
+  opacity: .75;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroller-x::-webkit-scrollbar{
+  background-color: #E9E9E9;
+  height: .3rem;
+  cursor: pointer;
+  border-left: 50%;
+}
+.scroller-x::-webkit-scrollbar-thumb
+{
+  cursor: pointer;
+  background-color: #a9a9a9;
+}
+.scroller-y::-webkit-scrollbar{
+  background-color: #E9E9E9;
+  width: .3rem;
+  border-left: 50%;
+  cursor: pointer;
+}
+.scroller-y::-webkit-scrollbar-thumb
+{
+  cursor: pointer;
+  background-color: #a9a9a9;
+}
+
+
+@keyframes move {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 101%;
+  }
+}
+
+.buy-now-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20%;
+  height: 60px;
+  width: 24px;
+  background: #fff;
+  opacity: 0.2;
+  transform: rotate(6deg);
+  animation: move 2.5s infinite;
+  transition: all  linear;
+}
+
+
+[data-lenis-prevent] {
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.spinner {
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #0E4D65;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
