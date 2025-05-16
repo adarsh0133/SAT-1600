@@ -294,7 +294,7 @@ const Hero = () => {
                 />
                 <link rel="canonical" href="https://crosstheskylimits.org/SAT1600" />
             </Helmet> */}
-      <div className="w-full bg-zinc-950  pt-5 bg-[url('/images/SAT1600/Benefits.webp')] bg-cover ">
+      <div className="w-full bg-zinc-950  pt-5 bg-[url('/images/SAT1600/Benefits.webp')] bg-cover">
         <div className="logo-img center  w-full h-[20vh] mt-14">
           <img className='w-[14%]' src="/images/SAT1600/satlogo.png" alt="" />
         </div>
@@ -320,12 +320,6 @@ const Hero = () => {
           id="videodiv"
           className="w-full h-[100vh]   flex  relative  items-center justify-center max-[600px]:h-[50vh]"
         >
-          {videoloading && (
-            <div className="loaderparent translate-x-[100vh] shrink-0 gap-5 center w-full h-full text-white text-2xl">
-              <div className="loader shrink-0"></div>
-              Please wait Video is Rendering.....
-            </div>
-          )}
           <video
             id="video"
             ref={videoRef}

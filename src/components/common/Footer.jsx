@@ -62,7 +62,7 @@ const Footer = () => {
               <h2 className="text-white font-semibold mb-2">ROADMAP</h2>
               <div className="mt-14 max-[600px]:mt-5 flex flex-col gap-3">
                 <a
-                  href="#home"
+                  href="/"
                   className="text-zinc-50 block text-sm font-light hover:text-zinc-300"
                 >
                   Home
@@ -182,14 +182,14 @@ const Footer = () => {
                 </a>
               </div>
               <div className="mt-10 flex flex-col gap-3">
-                <h2 className="text-white font-semibold mb-2">
+                {/* <h2 className="text-white font-semibold mb-2">
                   Subscribe for more
-                </h2>
-                <form
+                </h2> */}
+                {/* <form
                   action=""
                   onSubmit={(e) => {
                     e.preventDefault();
-                    // dispatch(Subscribemail(email));
+                    dispatch(Subscribemail(email));
                     toast.success("Subscribed Successfully");
                     setemail("");
                   }}
@@ -209,7 +209,7 @@ const Footer = () => {
                   >
                     Subscribe
                   </button>
-                </form>
+                </form> */}
               </div>
             </div>
 
